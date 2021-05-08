@@ -6,7 +6,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: #d3d0cb;
+    background-color: #d3d0cb;
 }
 
 @media only screen and (max-width: 480px){
@@ -143,7 +143,7 @@ footer{
           "nav referencias referencias"
           "nav footer footer";
         grid-template-rows: auto auto auto auto;
-        grid-template-columns: 20 80% 10%;
+        grid-template-columns: 100px auto auto;
      }
 
 header {
@@ -190,19 +190,20 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 100vh;
     transition: width 1s;
 
     &__itemMenu{
-    &__icono{
+    &__icono a{    
+        transition: 2s; 
+    }
     
-        display: flex;
-        font-size: 75%;
-        font-family: 'Montserrat', sans-serif;
-        justify-content: center;       
     }
     }
-}
+    .itemMenu__icono a:hover{
+        transform: scale(1.2);
+    }
 
 
 /*Referencias*/
@@ -273,10 +274,17 @@ header {
     grid-area: estadisticas;
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
+    padding: 500px;
     height: auto;
 }
     .contenido{
+        background-color: rgb(168, 168, 168);
+        .titulos{
+            text-align: center;
+            font-family:'Montserrat', sans-serif;
+            font-size: large;
+            padding: 15px;
+        }
         .contenido__img{
             img{
             @include size(auto, auto);
