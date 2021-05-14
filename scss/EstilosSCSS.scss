@@ -6,22 +6,25 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #d3d0cb;
+    background-color: rgb(134, 134, 134);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 @media only screen and (max-width: 480px){
 
 #grilla {
     margin: 0px;
     padding: 0px;
     display: grid;
+    background-color: rgba(0, 0, 0, 0.88);
     grid-template-areas: 
-    "nav nav"
     "header header"
     "estadisticas flotantes"
     "referencias flotantes"
-    "footer footer";
-    grid-template-rows: 50px auto auto 75px;
+    "foot foot"
+    "nav nav";
+    grid-template-rows: 70px auto auto auto;
     grid-template-columns: auto 15%;
 }
 
@@ -60,21 +63,63 @@ header {
     }
 
 /*Nav-Bar*/
+span{
+    display: none;
+}
 nav {
-    grid-area: nav;
-    background-color: #393e41;
+    
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    padding: 0%; 
+    grid-area: nav;
+    background-color: #393e41;
+    position:sticky;
+    bottom: 0px;
+    border-radius: 15px 15px 0 0;
 
-    a#itemMenuIcono {
-        width: 300px;
-           
+    .navBar{
 
+        padding: 0%;
+        margin: 0%;
+        width: 100vw;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         
+        .navItem{
+            width: 48px;
         }
+        
     }
+    }
+
+
+
+
+
+
+
+
+/*Footer*/
+footer {
+    grid-area: foot;
+    display: grid;
+    background-color: rgb(134, 134, 134);
+    height: auto;
+    align-items: center;
+
+
+    #redes{
+        max-height: 90%;
+        width: 100%;
+     }
 }
+
+
+
+}
+
 
 
 
