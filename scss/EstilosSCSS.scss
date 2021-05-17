@@ -94,9 +94,20 @@ nav {
     }
     }
 
+/*Referencias*/
+#referencias{
+    grid-area: referencias;
+}
 
+/*Estadisticas*/
+#estadisticas{
+    grid-area: estadisticas;
+}
 
-
+/*Flotantes*/
+aside{
+    grid-area: flotantes;
+}
 
 
 

@@ -69,6 +69,15 @@ html {
       justify-content: space-around; }
       nav .navBar .navItem {
         width: 48px; }
+  /*Referencias*/
+  #referencias {
+    grid-area: referencias; }
+  /*Estadisticas*/
+  #estadisticas {
+    grid-area: estadisticas; }
+  /*Flotantes*/
+  aside {
+    grid-area: flotantes; }
   /*Footer*/
   footer {
     grid-area: foot;
