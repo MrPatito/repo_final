@@ -13,7 +13,7 @@ html {
     display: grid;
     background-color: rgba(0, 0, 0, 0.88);
     grid-template-areas: "header header" "estadisticas flotantes" "referencias flotantes" "foot foot" "nav nav";
-    grid-template-rows: 70px auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: auto 15%; }
   /*Estilo para todas las img*/
   img {
@@ -36,17 +36,26 @@ html {
     background: -webkit-linear-gradient(to right, #ad5389, #3c1053);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ad5389, #3c1053);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 0 15px 15px; }
   #nombre {
     display: flex;
-    width: 60%;
+    flex-direction: column;
+    width: 40%;
     font-family: 'Montserrat', sans-serif;
-    justify-content: flex-start;
+    font-weight: 600;
+    justify-content: center;
     align-items: center; }
+    #nombre h1 {
+      margin-bottom: 0; }
+    #nombre h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      font-size: small; }
   #logo {
     display: flex;
     justify-content: flex-end;
-    width: 40%; }
+    width: 60%; }
   /*Nav-Bar*/
   span {
     display: none; }
@@ -71,20 +80,32 @@ html {
         width: 48px; }
   /*Referencias*/
   #referencias {
-    grid-area: referencias; }
+    grid-area: referencias;
+    background-color: #bab8b5; }
   /*Estadisticas*/
   #estadisticas {
     grid-area: estadisticas; }
+    #estadisticas .contenido {
+      background-color: #bab8b5;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: left; }
   /*Flotantes*/
   aside {
-    grid-area: flotantes; }
+    grid-area: flotantes;
+    background-color: #bab8b5;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px; }
   /*Footer*/
   footer {
     grid-area: foot;
     display: grid;
     background-color: #868686;
     height: auto;
-    align-items: center; }
+    align-items: center;
+    margin-top: 15px; }
     footer #redes {
       max-height: 90%;
       width: 100%; } }
