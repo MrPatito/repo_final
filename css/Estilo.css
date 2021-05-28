@@ -11,7 +11,7 @@ html {
     margin: 0px;
     padding: 0px;
     display: grid;
-    background-color: rgba(0, 0, 0, 0.88);
+    background-color: #122024e8;
     grid-template-areas: "header header" "estadisticas flotantes" "referencias flotantes" "foot foot" "nav nav";
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto 15%; }
@@ -31,12 +31,7 @@ html {
     flex-direction: row;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
-    background: #ad5389;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ad5389, #3c1053);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ad5389, #3c1053);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #3c1053;
     border-radius: 0 0 15px 15px; }
   #nombre {
     display: flex;
@@ -81,16 +76,30 @@ html {
   /*Referencias*/
   #referencias {
     grid-area: referencias;
-    background-color: #bab8b5; }
+    background-color: #E04751; }
   /*Estadisticas*/
   #estadisticas {
     grid-area: estadisticas; }
     #estadisticas .contenido {
-      background-color: #bab8b5;
-      margin-top: 15px;
+      background-color: #e5faf7;
+      margin: 15px 15px 0 15px;
       padding: 10px;
       border-radius: 10px;
+      box-shadow: 4px 4px 20px rgba(28, 70, 63, 0.281);
       text-align: left; }
+      #estadisticas .contenido__img img {
+        margin: 1px;
+        border-radius: 15px 15px 0 0;
+        border: 4px solid #fff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.212); }
+      #estadisticas .contenido__titulos {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 100px;
+        text-decoration: overline; }
+      #estadisticas .contenido__txt {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200; }
   /*Flotantes*/
   aside {
     grid-area: flotantes;
