@@ -146,16 +146,34 @@ nav {
         &__conocimientos{
             grid-area: competencias;
             
+                
             
             ul{
+                padding: 0;
                 display: flex;
                 flex-direction: row;
-                justify-items: space-around;
+                justify-content: space-around;
+                
+                
+
                 li{
-                    
+                    display: flex;
+                    width: 30%;
                     list-style: none;
-                    background-color: #f1f8fa;
-                    border-radius: 5px;
+                    height: 50px;
+                    align-items: center;
+                    background-color: #3c1053;
+                    border-radius: 5px 5px 10px 10px;
+                    justify-content: center;
+                    box-shadow: 2px 2px 6px rgba(40, 0, 73, 0.637);
+                    border: 1px solid blanchedalmond;
+                    
+
+                    color: #f1f8fa;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    text-align: center;
+                    font-size: 80%;
                 }
             }
             
@@ -163,10 +181,23 @@ nav {
 
         &__nombre{
             grid-area: nombre;
+            h2{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                color: #bba390;
+                padding: 15px 15px 15px 15px;
+                }
+
         }
 
         &__descripcion{
             grid-area: descripcion;
+            padding: 0 15px 10px 15px;
+            font-family: 'roboto', sans-serif;
+            font-weight: 600 ;
+            font-style: normal;
+            color: #fce1cb;
+            letter-spacing: 1px;
         }
 
     }
